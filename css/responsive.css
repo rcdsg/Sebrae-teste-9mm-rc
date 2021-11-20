@@ -1,0 +1,127 @@
+/*  $5 - Responsive                                                      */
+/*              $5.1   - Responsive - Desktop                            */
+/*              $5.2   - Responsive - Tablet                             */
+/*              $5.3   - Responsive - Mobile                             */
+/*                  $5.3.1   - Responsive - Mobile - HTML Elements       */
+/*                  $5.3.2   - Responsive - Mobile - Classes             */
+/*                  $5.3.3   - Responsive - Mobile - Content             */
+/*                      $5.3.3.1   - Responsive - Mobile - Patterns      */
+
+/* ===================================================================== */
+/*  $5 - Responsive                                                      */
+/* ===================================================================== */
+
+/*      $5.1 - Responsive - Desktop                                      */
+@media (min-width: 992px){
+    /*      $5.1.1   - Responsive - Desktop - HTML Elements              */
+    /*      $5.1.2   - Responsive - Desktop - Classes                    */
+    /*      $5.1.3   - Responsive - Desktop - Content                    */
+            .container {
+                max-width: 1070px;
+            }
+    }
+    
+/*      $5.2 - Responsive - Tablet                                    */
+@media (min-width: 768px){
+    .col-md-4{
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+@media (max-width: 768px){
+/*      $5.2.1   - Responsive - Tablet - HTML Elements                */
+/*      $5.2.2   - Responsive - Tablet - Classes                      */
+        /* Espaços */
+            /* Padding */
+            .pd-0-sm{padding: var(--space-none)!important;}
+                /* Top */
+                .pt-0-sm{padding-top: var(--space-none)!important;}
+                /* Bottom */
+                .pb-0-sm{padding-bottom: var(--space-none)!important;}
+                /* Horizontal */
+                .pd-x-0-sm{padding-left: var(--space-none)!important; padding-right: var(--space-none)!important;}
+                
+                /* Vertical */
+                .pd-y-0-sm{padding-top: var(--space-none); padding-bottom: var(--space-none);}
+            
+            /* Margin */
+            .mg-0-sm{margin: var(--space-none)!important;}
+                /* Top */
+                .mt-0-sm{margin-top: var(--space-none)!important;}
+                /* Bottom */
+                .mb-0-sm{margin-bottom: var(--space-none)!important;}
+                /* Horizontal */
+                .mg-x-0-sm{margin-left: var(--space-none); margin-right: var(--space-none);}
+                
+                /* Vertical */
+                .mg-y-0-sm{margin-top: var(--space-none); margin-bottom: var(--space-none);}
+
+/*      $5.2.3   - Responsive - Tablet - Content                         */
+        .container {
+            max-width: 656px;
+        }
+        .footer-top address{padding: 0 var(--space-s);}
+        .footer-top .logo-footer{text-align: left;}
+
+        /*     $5.2.3.1 - Patterns                                       */
+                    /* Blog Posts Cards */
+                    .blog-posts-cards > div > div{
+                        justify-content: flex-start!important;
+                        row-gap: 48px;
+                    }
+}
+
+/*      $5.3 - Responsive - Mobile                                       */
+@media (max-width: 576px){
+/*      $5.3.1   - Responsive - Mobile - HTML Elements                   */
+        /* Headings */
+        h1{font-size: var(--font-size-h1-xs)!important;}
+        h2{font-size: var(--font-size-h2-xs)!important;}
+
+/*      $5.3.2   - Responsive - Mobile - Classes                         */
+        /* Espaços */
+            /* Padding */
+            .pd-0-xs{padding: 0!important;}
+            .pd-l-xs{padding: var(--space-l);}
+            .pd-xl-xs{padding: var(--space-xl)!important;}
+            .pd-xxl-xs{padding: var(--space-xxl);}
+
+                /* Top */
+                .pt-0-xs{padding-top: var(--space-none)!important;}
+                .pt-s-xs{padding-top: var(--space-s)!important;}
+                .pt-md-xs{padding-top: var(--space-md)!important;}
+                /* Bottom */
+                .pb-0-xs{padding-bottom: var(--space-none)!important;}
+                /* Horizontal */
+                .pd-x-0-xs{padding-left: var(--space-none); padding-right: var(--space-none);}
+                .pd-x-xs{padding-left: var(--space-base)!important;padding-right: var(--space-base)!important;}
+                /* Vertical */
+                .pd-y-0-xs{padding-top: var(--space-none); padding-bottom: var(--space-none);}
+
+            /* Margin */
+            .mg-0-xs{margin: var(--space-none)!important;}
+
+                /* Top */
+                .mt-0-xs{margin-top: var(--space-none)!important;}
+                /* Bottom */
+                .mb-0-xs{margin-bottom: var(--space-none)!important;}
+                /* Horizontal */
+                .mg-x-0-xs{margin-left: var(--space-none); margin-right: var(--space-none);}
+                /* Vertical */
+                .mg-y-0-xs{margin-top: var(--space-none); margin-bottom: var(--space-none);}
+
+/*      $5.3.3   - Responsive - Mobile - Content                         */
+        .container {
+            max-width: none;
+            width: 100%;
+        }
+        .container-flex{gap: 30px;}
+        .footer-top .logo-footer{text-align: center;}
+
+        /*     $5.3.3.1 - Patterns                                       */
+                /* Blog Posts Cards */
+                .blog-posts-cards > div > div{
+                justify-content: center!important;
+                }
+
+}

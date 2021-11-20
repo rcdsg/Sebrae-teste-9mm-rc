@@ -1,0 +1,11 @@
+/*  Classes em uso                                                        */
+/* ====================================================================== */
+
+1- Classes CSS para colunas, alinhamento, espaçamento (padding e margin), cores
+todas estão definidas em ordem como consta no Menu Principal dentro de
+style.css (versão dev)
+
+2- Css minificado, cada arquivo com extensão .min e mais os arquivos originais
+com versão completa dev.
+
+=)

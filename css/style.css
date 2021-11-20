@@ -1,0 +1,316 @@
+/*  CSS - DEV VERSION                                                    */
+/* ===================================================================== */
+/*  $0 - Root - CSS Variables                                            */
+
+/*  $1 - HTML Elements                                                   */
+/*       $1.1 - HTML Elements - Links                                    */
+/*       $1.2 - HTML Elements - Images                                   */
+/*       $1.3 - HTML Elements - Headings                                 */
+/*       $1.4 - HTML Elements - Paragraphs                               */
+/*       $1.5 - HTML Elements - Lists                                    */
+
+/*  $2 - Page Layout                                                     */
+/*       $2.1 - Page Layout - Header                                     */
+/*              $2.1.1 - Page Layout - Header Content                    */
+/*       $2.2 - Page Layout - Content                                    */
+/*       $2.3 - Page Layout - Footer                                     */
+
+/*  $3 - Patterns                                                        */
+/*       $3.1 - Patterns - Content                                       */
+/*              $3.1.1  - Patterns - Content - Section                   */
+
+/*  $4 - Styles                                                          */
+/*       $4.1 - Styles - Classes                                         */
+@import "classes.min.css";
+
+/*  $5 - Responsive                                                      */
+@import "responsive.min.css";
+
+
+/* ===================================================================== */
+/*  $0 - Root - CSS Variables                                            */
+/* ===================================================================== */
+
+:root {
+
+    /* Tipografia */
+        /* Fonts */
+        --font-main: 'Inter', sans-serif;
+
+        /* Tamanhos */
+        --font-size-base: 14px;
+
+            /* Headings */
+            --font-size-h1: 40px;
+            --font-size-h2: 35px;
+            --font-size-h3: 30px;
+            --font-size-h4: 23px;
+            --font-size-h5: 20px;
+            --font-size-h6: 16px;
+                /* Headings - Mobile */
+                --font-size-h1-xs: 35px;
+                --font-size-h2-xs: 30px;
+            
+            /* Paragraphs */
+            --font-size-p-md: 18px;
+
+        /* Peso */
+        --font-light: 300;
+        --font-regular: 400;
+        --font-semi-bold: 600;
+        --font-bold: 700;
+    
+    /* Cores - Brand */
+    --color-primary: #0041D9;
+    --color-secondary: #363636;
+    
+    --color-primary-hover: #295fd6;
+
+    /* Cores - Paleta */
+
+    --color-azul-sebrae-vivo: #3B4AFF;
+    --color-azul-logo-sebrae:#0041b5;
+    
+    --color-green: #20ea85;
+    --color-green-dark:#20bea0;
+    --color-green-darkest: #00B493;
+    
+    --color-lime-light:#55EEA1;
+    --color-lime: #20ea85;
+    
+    /* Cores - Neutras */
+    --color-neutral-0: #FFFFFF;
+    --color-neutral-1: #A4AEB9;
+    --color-neutral-2: #303030;
+    --color-neutral-3: #363636;
+    --color-neutral-3-80: #363636CC; /* -80 = 80% */
+    --color-neutral-4:#333333;
+    --color-neutral-5: #1A2028;
+ 
+    /* Cores - Semantica */    
+    --color-success-light: #AEFFC5CC;
+    --color-success: #01997d;/* melhoria. padrao = #00B493 */
+    
+    --color-info-light: #EAFCFF;
+    --color-info: #D7F9FF;
+
+    /* Espaço - Tamanhos */
+    --space-none: 0;
+    --space-xs: 4px;
+    --space-s: 8px;
+    --space-base: 12px;
+    --space-md: 24px;
+    --space-l: 32px;
+    --space-xl: 40px;
+    --space-xxl: 48px;
+    
+    /* Border Radius */
+    --border-radius-none: 0;
+    --border-radius-soft-xs: 2px;
+    --border-radius-soft-s: 3px;
+    --border-radius-soft: 4px;
+    --border-radius-soft-l: 20px;
+    --border-radius-rounded: 100px;
+    --border-radius-circle: 100%;
+    
+    /* Borda Tamanhos */
+    --border-size-none: 0;
+    --border-size-s: 1px;
+    --border-size-md: 2px;
+    --border-size-l: 3px;
+    --border-size-xl: 4px;
+    --border-size-xxl: 5px;
+
+    /* Transitions */
+    --transition-e-i-o-base: ease-in-out .3s;
+    --transition-e-i-o-5s: ease-in-out .5s;
+
+}
+
+
+
+/* ===================================================================== */
+/*  $1 - HTML Elements                                                   */
+/* ===================================================================== */
+
+/*    $1.1 - HTML Elements - Links                                       */
+a{
+    color: var(--color-neutral-4);
+    font-weight: var(--font-semi-bold);
+    transition: var(--transition-e-i-o-base)
+}
+/* Hover */
+a:hover{color: var(--color-lime-light);}
+
+/*    $1.2 - HTML Elements - Images                                      */
+
+/*    $1.3 - HTML Elements - Headings                                    */
+h1{font-size: var(--font-size-h1);}
+h2{font-size: var(--font-size-h2);}
+h3{font-size: var(--font-size-h3);}
+h4{font-size: var(--font-size-h4);}
+h5{font-size: var(--font-size-h5);}
+h6{font-size: var(--font-size-h6);}
+
+/*    $1.4 - HTML Elements - Paragraphs                                  */
+p{line-height: var(--space-md);}
+
+/*    $1.5 - HTML Elements - Lists                                       */
+li{margin-bottom: 1em;}
+li:last-child{margin-bottom: var(--space-none);}
+
+/* ===================================================================== */
+/*  $2 - Page Layout                                                     */
+/* ===================================================================== */
+
+body{
+    font-family: var(--font-main);
+    font-size: var(--font-size-base);
+    color: var(--color-neutral-3);
+}
+
+/*    $2.1 - Page Layout - Header                                        */
+header{
+    background-color: var(--color-success-light);
+    padding: var(--space-xxl) 0;
+}
+header .logo img{
+    color: var(--color-azul-logo-sebrae);
+    font-size: var(--font-size-h5);
+    font-style: italic;
+    font-weight: 700;    
+    padding: 1em 0;
+}
+header .message{padding: 0 12em;}
+header h1{
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+}
+header p{color: var(--color-success);}
+header p span{
+    color: var(--color-primary);
+    display: block;
+}
+
+/*    $2.2 - Page Layout - Content                                       */
+.container{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/*    $2.3 - Page Layout - Footer                                        */
+footer section b{font-weight: var(--font-bold);}
+footer .copy{
+    background-color: var(--color-azul-sebrae-vivo);
+    color: var(--color-neutral-0);
+    padding: var(--space-base);
+    text-align: center;
+}
+.footer-top{
+    color: var(--color-neutral-2);
+    padding: 1.5em;
+}
+.footer-top *{
+    align-items: center;
+    text-align: center;
+}
+.footer-top address{
+    display: flex;
+    justify-content: center;
+}
+.footer-top address p{text-align: left;}
+
+.logo-footer a{transition: var(--transition-e-i-o-base);}
+.logo-footer a:hover{opacity: .75;}
+
+.social-logos{
+    display: flex;
+    justify-content: center;
+}
+.social-logos ul{
+    display: flex;
+    column-gap: 10px;
+}
+.social-logos ul li{
+    margin: var(--space-none);
+    transition: var(--transition-e-i-o-base);
+}
+.social-logos ul li:hover{opacity: .75;}
+
+
+/* ===================================================================== */
+/*  $3 - Patterns                                                        */
+/* ===================================================================== */
+
+/*      $3.1.1  - Patterns - Content - Section                           */
+/* Blog Posts Cards */
+.blog-posts-cards h2{ padding: var(--space-md);}
+.blog-posts-cards > div > div{
+    column-gap: 58px;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-basis: 270px;
+    flex-direction: column;
+}
+.card a{
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}
+.card figure{
+    flex: 1;
+}
+.card img{
+    background-color: var(--color-neutral-1);
+    height: 161px;
+    width: 270px;
+}
+.card-body{
+    flex: 1;
+    flex-basis: auto;
+    padding-top: 1em;
+}
+
+.category{
+    color: var(--color-neutral-1);
+    display: block;
+    font-size: 10px;
+    font-weight: var(--font-semi-bold);
+    padding-bottom: .5em;
+    text-transform: uppercase;
+}
+.card-title{
+    color: var(--color-neutral-5) ;
+    font-weight: var(--font-bold);
+    margin-bottom: 1.5em;
+}
+
+/* CTA Blog Posts */
+.blog-posts-cta{background-color: var(--color-info-light);}
+.blog-posts-cta .container{padding: 0 16em;}
+.blog-posts-cta h2 span{
+    border-bottom: var(--border-size-l);
+    border-style: solid;
+}
+.blog-posts-cta p span{display: block;}
+
+
+/* Blog Posts List */
+.blog-posts-list li{display: flex;}
+.blog-posts-list li::before{
+    background:var(--color-lime-light);
+    content: "";
+    display:inline-block;
+    height:13px;
+    margin-right:12px;
+    min-width:11px;
+}
+.list-wrapper{
+    border: var(--border-size-xxl) solid;
+    border-color: var(--color-info);
+    border-radius: var(--border-radius-soft-l);
+    margin: 0 9em;
+    padding: 5em 7em;
+}
